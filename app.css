@@ -4,27 +4,34 @@
     box-sizing: border-box;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 16px;
-    color: #ffffff;
-    background-color: blue;
-}
+    height: 60px;
+    padding: 0 20px;
+    background-color: #333;
+    color: #fff;
+  }
 
-.logo{
-    flex: 1;
-}
-nav ul{
-    flex: 1;
+  nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  nav ul {
     display: flex;
-    justify-content: space-evenly;
-}
-
-nav ul li{
-    list-style-type: none;
-}
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
 main{
     padding: 1rem;
     width: 100%;
@@ -81,6 +88,16 @@ main{
     gap: 2rem;
 }
 
+#book-ticket-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
 .booking-grid{
     margin: 0 auto;
     display: grid;
@@ -116,6 +133,31 @@ main{
     border:4px outset rgb(0, 0, 0);
 }
 
+.footer {
+    margin-top: 200px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+  }
+
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer .fa-solid {
+    font-family: "Font Awesome 5 Free Solid";
+  }
+  
+  .footer .link-light {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer .link-light:hover {
+    color: rgb(158, 89, 89);
+  }
+  
 
 .d-none{
     display: none;
